@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juego de Ordenamiento</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column; /* Alinea el contenido en columna */
+    }
+    #container {
+        display: flex;
+        width: 80%;
+        height: 80%;
+        justify-content: space-between; /* Ajuste para espacio entre contenedores */
+    }
+    #contenedor-nombres {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Ajuste para alinear nombres a la izquierda */
+    }
+    #nombres-ordenados {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Ajuste para alinear nombres a la izquierda */
+        margin-left: 20px; /* Ajuste para espacio entre contenedores */
+    }
+    .nombre {
+        padding: 10px;
+        margin-bottom: 5px;
+        background-color: lightgray;
+        cursor: pointer;
+    }
+    #Boton-Verificador {
+        margin-top: 20px; /* Espacio entre los contenedores y el botón */
+    }
+</style>
+</head>
+<body>
+<div id="container">
+    <div id="contenedor-nombres"></div>
+    <div id="nombres-ordenados"></div>
+</div>
+<button id="Boton-Verificador" style="display:none;">OK</button>
+
+<script src="script.js"></script>
+</body>
+</html>
